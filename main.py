@@ -1,9 +1,7 @@
-# main.py
-
 import importlib
 import os
 from dotenv import load_dotenv
-from config import create_bot_client
+from config import app
 
 # load environment variables from .env
 load_dotenv()
@@ -24,5 +22,4 @@ if __name__ == "__main__":
     print("📦 Handlers loaded successfully!")
     print("🚀 Bot is running...")
 
-    app = create_bot_client()
     app.run()
